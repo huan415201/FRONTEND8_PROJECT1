@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/huan_style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <title>Welcome to Foster</title>
+</head>
+
+<body>
+    <header class="d-flex">
+        <!-- div dưới dùng để đẩy header-right-div qua phải-->
+        <div class="d-flex" id="header-left-div">
+            <div class="center" id="header-logo" onclick="RedirectTo('index')">
+                <p>Foster</p>
+            </div>
+            <div class="center" id="header-navbar">
+                <ul>
+                    <li class="menu" onclick="ShowSubMenu()">
+                        <a href="" class="sub-menu-container">
+                            STORE
+                            <div class="sub-menu">
+                                <div>FEATURED</div>
+                                <div>EXPLORE</div>
+                                <div>CURATORS</div>
+                                <div>WISHLIST</div>
+                                <div>NEWS</div>
+                                <div>STATS</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li><a href="" class="no-sub-menu">COMMUNITY</a></li>
+                    <li><a href="" class="no-sub-menu">ABOUT</a></li>
+                    <li class="last-li"><a href="" class="no-sub-menu">SUPPORT</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="center" id="header-right-div">
+            <ul>
+                <li><a href="">Login</a></li>
+                <li class="last-li"><a href="">Register</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="title-container">
+        <p>Browsing Free to Play</p>
+        <p id="title-description">Browse the newest, top selling Free to Play products on Foster</p>
+    </div>
+
+    <main id="freetoplay-main" class="d-flex">
+        <div id="main-left">
+            <div id="tabs-container" class="d-flex">
+                <div class="tabs active-tab" onclick="ChangeActiveTab(0)">New and Trending</div>
+                <div class="tabs" onclick="ChangeActiveTab(1)">Top Selling</div>
+                <div class="tabs" onclick="ChangeActiveTab(2)">What's Being Played</div>
+                <div class="tabs" onclick="ChangeActiveTab(3)">Upcoming</div>
+            </div>
+            <div class="contents">
+                <div class="items d-flex">
+                    <div class="items-img-container">
+                        <img src="img/items_1.jpg" alt="">
+                    </div>
+                    <div class="items-info">
+                        <p style="color: white;">Dodge the Wall!</p>
+                        <div class="d-flex" style="color: grey; justify-content: space-between;">
+                            <div class="d-flex" style="min-width: 80%;">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <p style="min-width: 20%; text-align: right; color: white; padding-right: 3%;">Free to Play
+                            </p>
+                        </div>
+                        <p style="color: grey;">Early Access, Free to Play, Indie, Casual</p>
+                    </div>
+                </div>
+                <div class="items d-flex">
+                    <div class="items-img-container">
+                        <img src="img/items_2.jpg" alt="">
+                    </div>
+                    <div class="items-info">
+                        <p style="color: white;">Neon Beats</p>
+                        <div class="d-flex" style="color: grey; justify-content: space-between;">
+                            <div class="d-flex" style="min-width: 80%;">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <p style="min-width: 20%; text-align: right; color: white; padding-right: 3%;">Free to Play
+                            </p>
+                        </div>
+                        <p style="color: grey;">Free to Play, Indie, Rhythm, Great Soundtrack</p>
+                    </div>
+                </div>
+                <div class="items d-flex">
+                    <div class="items-img-container">
+                        <img src="img/items_3.jpg" alt="">
+                    </div>
+                    <div class="items-info">
+                        <p style="color: white;">KurtzPel</p>
+                        <div class="d-flex" style="color: grey; justify-content: space-between;">
+                            <div class="d-flex" style="min-width: 80%;">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <p style="min-width: 20%; text-align: right; color: white; padding-right: 3%;">Free to Play
+                            </p>
+                        </div>
+                        <p style="color: grey;">Early Access, Anime, Character Customization, Action</p>
+                    </div>
+                </div>
+                <div class="items d-flex">
+                    <div class="items-img-container">
+                        <img src="img/items_4.jpg" alt="">
+                    </div>
+                    <div class="items-info">
+                        <p style="color: white;">Toran</p>
+                        <div class="d-flex" style="color: grey; justify-content: space-between;">
+                            <div class="d-flex" style="min-width: 80%;">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <p style="min-width: 20%; text-align: right; color: white; padding-right: 3%;">Free</p>
+                        </div>
+                        <p style="color: grey;">Indie, Adventure, Free to Play, VR</p>
+                    </div>
+                </div>
+                <div class="items d-flex">
+                    <div class="items-img-container">
+                        <img src="img/items_5.jpg" alt="">
+                    </div>
+                    <div class="items-info">
+                        <p style="color: white;">Sin Slayers: The First Sin</p>
+                        <div class="d-flex" style="color: grey; justify-content: space-between;">
+                            <div class="d-flex" style="min-width: 80%;">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <p style="min-width: 20%; text-align: right; color: white; padding-right: 3%;">Free</p>
+                        </div>
+                        <p style="color: grey;">Indie, RPG, Strategy, Adventure</p>
+                    </div>
+                </div>
+                <div class="items d-flex">
+                    <div class="items-img-container">
+                        <img src="img/items_6.jpg" alt="">
+                    </div>
+                    <div class="items-info">
+                        <p style="color: white;">Black Survival</p>
+                        <div class="d-flex" style="color: grey; justify-content: space-between;">
+                            <div class="d-flex" style="min-width: 80%;">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <p style="min-width: 20%; text-align: right; color: white; padding-right: 3%;">Free to Play
+                            </p>
+                        </div>
+                        <p style="color: grey;">Free to Play, Survival, Anime, Strategy</p>
+                    </div>
+                </div>
+                <div class="items d-flex">
+                    <div class="items-img-container">
+                        <img src="img/items_7.jpg" alt="">
+                    </div>
+                    <div class="items-info">
+                        <p style="color: white;">Auf Abwegen</p>
+                        <div class="d-flex" style="color: grey; justify-content: space-between;">
+                            <div class="d-flex" style="min-width: 80%;">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <p style="min-width: 20%; text-align: right; color: white; padding-right: 3%;">Free to Play
+                            </p>
+                        </div>
+                        <p style="color: grey;">Free to Play, Adventure, Indie, 2D</p>
+                    </div>
+                </div>
+                <div class="items d-flex">
+                    <div class="items-img-container">
+                        <img src="img/items_8.jpg" alt="">
+                    </div>
+                    <div class="items-info">
+                        <p style="color: white;">ManaRocks</p>
+                        <div class="d-flex" style="color: grey; justify-content: space-between;">
+                            <div class="d-flex" style="min-width: 80%;">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <p style="min-width: 20%; text-align: right; color: white; padding-right: 3%;">Free to Play
+                            </p>
+                        </div>
+                        <p style="color: grey;">Early Access, Free to Play, Card Game, Indie</p>
+                    </div>
+                </div>
+                <div class="items d-flex">
+                    <div class="items-img-container">
+                        <img src="img/items_9.jpg" alt="">
+                    </div>
+                    <div class="items-info">
+                        <p style="color: white;">文 字 獄</p>
+                        <div class="d-flex" style="color: grey; justify-content: space-between;">
+                            <div class="d-flex" style="min-width: 80%;">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <p style="min-width: 20%; text-align: right; color: white; padding-right: 3%;">Free</p>
+                        </div>
+                        <p style="color: grey;">Free to Play, Adventure, Indie</p>
+                    </div>
+                </div>
+                <div class="items d-flex">
+                    <div class="items-img-container">
+                        <img src="img/items_10.jpg" alt="">
+                    </div>
+                    <div class="items-info">
+                        <p style="color: white;">When the Darkness comes</p>
+                        <div class="d-flex" style="color: grey; justify-content: space-between;">
+                            <div class="d-flex" style="min-width: 80%;">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <p style="min-width: 20%; text-align: right; color: white; padding-right: 3%;">Free</p>
+                        </div>
+                        <p style="color: grey;">Free to Play, Psychological Horror, Indie, Adventure</p>
+                    </div>
+                </div>
+                <div class="items d-flex paging">
+                    <div>Showing 1-10 of 110 results</div>
+                    <div class="numbers-div">
+                        <button>&#60;</button>
+                        <span style="color: white;">1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                        <span>6</span>
+                        <span>...</span>
+                        <span>11</span>
+                        <button>&#62;</button>
+                    </div>
+                </div>
+            </div>
+            <div class="contents" style="display: none;">
+                <div class="items d-flex">
+                    <div class="items-img-container">
+                        <img src="img/items_11.jpg" alt="">
+                    </div>
+                    <div class="items-info">
+                        <p style="color: white;">Dota 2</p>
+                        <div class="d-flex" style="color: grey; justify-content: space-between;">
+                            <div class="d-flex" style="min-width: 80%;">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-apple"></i>
+                            </div>
+                            <p style="min-width: 20%; text-align: right; color: white; padding-right: 3%;">Free to Play
+                            </p>
+                        </div>
+                        <p style="color: grey;">Free to Play, MOBA, Strategy, Multiplayer</p>
+                    </div>
+                </div>
+                <div class="items d-flex">
+                    <div class="items-img-container">
+                        <img src="img/items_12.jpg" alt="">
+                    </div>
+                    <div class="items-info">
+                        <p style="color: white;">Counter Strike: Global Offensive</p>
+                        <div class="d-flex" style="color: grey; justify-content: space-between;">
+                            <div class="d-flex" style="min-width: 80%;">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-apple"></i>
+                            </div>
+                            <p style="min-width: 20%; text-align: right; color: white; padding-right: 3%;">Free to Play
+                            </p>
+                        </div>
+                        <p style="color: grey;">Free to Play, Indie, Rhythm, Great Soundtrack</p>
+                    </div>
+                </div>
+                <div class="items d-flex">
+                    <div class="items-img-container">
+                        <img src="img/items_13.jpg" alt="">
+                    </div>
+                    <div class="items-info">
+                        <p style="color: white;">Warframe</p>
+                        <div class="d-flex" style="color: grey; justify-content: space-between;">
+                            <div class="d-flex" style="min-width: 80%;">
+                                <i class="fab fa-windows"></i>
+                            </div>
+                            <p style="min-width: 20%; text-align: right; color: white; padding-right: 3%;">Free to Play
+                            </p>
+                        </div>
+                        <p style="color: grey;">Free to Play, Action, Co-op, Multiplayer</p>
+                    </div>
+                </div>
+                <div class="items d-flex">
+                    <div class="items-img-container">
+                        <img src="img/items_14.jpg" alt="">
+                    </div>
+                    <div class="items-info">
+                        <p style="color: white;">World of Warships</p>
+                        <div class="d-flex" style="color: grey; justify-content: space-between;">
+                            <div class="d-flex" style="min-width: 80%;">
+                                <i class="fab fa-windows"></i>
+                            </div>
+                            <p style="min-width: 20%; text-align: right; color: white; padding-right: 3%;">Free to Play
+                            </p>
+                        </div>
+                        <p style="color: grey;">Free to Play, World War II, Naval, Multiplayer</p>
+                    </div>
+                </div>
+                <div class="items d-flex">
+                    <div class="items-img-container">
+                        <img src="img/items_5.jpg" alt="">
+                    </div>
+                    <div class="items-info">
+                        <p style="color: white;">Sin Slayers: The First Sin</p>
+                        <div class="d-flex" style="color: grey; justify-content: space-between;">
+                            <div class="d-flex" style="min-width: 80%;">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <p style="min-width: 20%; text-align: right; color: white; padding-right: 3%;">Free</p>
+                        </div>
+                        <p style="color: grey;">Indie, RPG, Strategy, Adventure</p>
+                    </div>
+                </div>
+                <div class="items d-flex">
+                    <div class="items-img-container">
+                        <img src="img/items_6.jpg" alt="">
+                    </div>
+                    <div class="items-info">
+                        <p style="color: white;">Black Survival</p>
+                        <div class="d-flex" style="color: grey; justify-content: space-between;">
+                            <div class="d-flex" style="min-width: 80%;">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <p style="min-width: 20%; text-align: right; color: white; padding-right: 3%;">Free to Play
+                            </p>
+                        </div>
+                        <p style="color: grey;">Free to Play, Survival, Anime, Strategy</p>
+                    </div>
+                </div>
+                <div class="items d-flex">
+                    <div class="items-img-container">
+                        <img src="img/items_7.jpg" alt="">
+                    </div>
+                    <div class="items-info">
+                        <p style="color: white;">Auf Abwegen</p>
+                        <div class="d-flex" style="color: grey; justify-content: space-between;">
+                            <div class="d-flex" style="min-width: 80%;">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <p style="min-width: 20%; text-align: right; color: white; padding-right: 3%;">Free to Play
+                            </p>
+                        </div>
+                        <p style="color: grey;">Free to Play, Adventure, Indie, 2D</p>
+                    </div>
+                </div>
+                <div class="items d-flex">
+                    <div class="items-img-container">
+                        <img src="img/items_8.jpg" alt="">
+                    </div>
+                    <div class="items-info">
+                        <p style="color: white;">ManaRocks</p>
+                        <div class="d-flex" style="color: grey; justify-content: space-between;">
+                            <div class="d-flex" style="min-width: 80%;">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <p style="min-width: 20%; text-align: right; color: white; padding-right: 3%;">Free to Play
+                            </p>
+                        </div>
+                        <p style="color: grey;">Early Access, Free to Play, Card Game, Indie</p>
+                    </div>
+                </div>
+                <div class="items d-flex">
+                    <div class="items-img-container">
+                        <img src="img/items_9.jpg" alt="">
+                    </div>
+                    <div class="items-info">
+                        <p style="color: white;">文 字 獄</p>
+                        <div class="d-flex" style="color: grey; justify-content: space-between;">
+                            <div class="d-flex" style="min-width: 80%;">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <p style="min-width: 20%; text-align: right; color: white; padding-right: 3%;">Free</p>
+                        </div>
+                        <p style="color: grey;">Free to Play, Adventure, Indie</p>
+                    </div>
+                </div>
+                <div class="items d-flex">
+                    <div class="items-img-container">
+                        <img src="img/items_10.jpg" alt="">
+                    </div>
+                    <div class="items-info">
+                        <p style="color: white;">When the Darkness comes</p>
+                        <div class="d-flex" style="color: grey; justify-content: space-between;">
+                            <div class="d-flex" style="min-width: 80%;">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <p style="min-width: 20%; text-align: right; color: white; padding-right: 3%;">Free</p>
+                        </div>
+                        <p style="color: grey;">Free to Play, Psychological Horror, Indie, Adventure</p>
+                    </div>
+                </div>
+                <div class="items d-flex paging">
+                    <div>Showing 1-10 of 412 results</div>
+                    <div class="numbers-div">
+                        <button>&#60;</button>
+                        <span style="color: white;">1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                        <span>6</span>
+                        <span>...</span>
+                        <span>42</span>
+                        <button>&#62;</button>
+                    </div>
+                </div>
+            </div>
+            <div class="contents" style="display: none;">
+                <div class="items d-flex">
+                    <div class="items-img-container">
+                        <img src="img/items_1.jpg" alt="">
+                    </div>
+                    <div class="items-info">
+                        <p style="color: white;">Dodge 3</p>
+                        <div class="d-flex" style="color: grey; justify-content: space-between;">
+                            <div class="d-flex" style="min-width: 80%;">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <p style="min-width: 20%; text-align: right; color: white; padding-right: 3%;">Free to Play
+                            </p>
+                        </div>
+                        <p style="color: grey;">Early Access, Free to Play, Indie, Casual</p>
+                    </div>
+                </div>
+                <div class="items d-flex">
+                    <div class="items-img-container">
+                        <img src="img/items_2.jpg" alt="">
+                    </div>
+                    <div class="items-info">
+                        <p style="color: white;">Neon Beats</p>
+                        <div class="d-flex" style="color: grey; justify-content: space-between;">
+                            <div class="d-flex" style="min-width: 80%;">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <p style="min-width: 20%; text-align: right; color: white; padding-right: 3%;">Free to Play
+                            </p>
+                        </div>
+                        <p style="color: grey;">Free to Play, Indie, Rhythm, Great Soundtrack</p>
+                    </div>
+                </div>
+                <div class="items d-flex">
+                    <div class="items-img-container">
+                        <img src="img/items_3.jpg" alt="">
+                    </div>
+                    <div class="items-info">
+                        <p style="color: white;">KurtzPel</p>
+                        <div class="d-flex" style="color: grey; justify-content: space-between;">
+                            <div class="d-flex" style="min-width: 80%;">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <p style="min-width: 20%; text-align: right; color: white; padding-right: 3%;">Free to Play
+                            </p>
+                        </div>
+                        <p style="color: grey;">Early Access, Anime, Character Customization, Action</p>
+                    </div>
+                </div>
+                <div class="items d-flex">
+                    <div class="items-img-container">
+                        <img src="img/items_4.jpg" alt="">
+                    </div>
+                    <div class="items-info">
+                        <p style="color: white;">Toran</p>
+                        <div class="d-flex" style="color: grey; justify-content: space-between;">
+                            <div class="d-flex" style="min-width: 80%;">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <p style="min-width: 20%; text-align: right; color: white; padding-right: 3%;">Free</p>
+                        </div>
+                        <p style="color: grey;">Indie, Adventure, Free to Play, VR</p>
+                    </div>
+                </div>
+                <div class="items d-flex">
+                    <div class="items-img-container">
+                        <img src="img/items_5.jpg" alt="">
+                    </div>
+                    <div class="items-info">
+                        <p style="color: white;">Sin Slayers: The First Sin</p>
+                        <div class="d-flex" style="color: grey; justify-content: space-between;">
+                            <div class="d-flex" style="min-width: 80%;">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <p style="min-width: 20%; text-align: right; color: white; padding-right: 3%;">Free</p>
+                        </div>
+                        <p style="color: grey;">Indie, RPG, Strategy, Adventure</p>
+                    </div>
+                </div>
+                <div class="items d-flex">
+                    <div class="items-img-container">
+                        <img src="img/items_6.jpg" alt="">
+                    </div>
+                    <div class="items-info">
+                        <p style="color: white;">Black Survival</p>
+                        <div class="d-flex" style="color: grey; justify-content: space-between;">
+                            <div class="d-flex" style="min-width: 80%;">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <p style="min-width: 20%; text-align: right; color: white; padding-right: 3%;">Free to Play
+                            </p>
+                        </div>
+                        <p style="color: grey;">Free to Play, Survival, Anime, Strategy</p>
+                    </div>
+                </div>
+                <div class="items d-flex">
+                    <div class="items-img-container">
+                        <img src="img/items_7.jpg" alt="">
+                    </div>
+                    <div class="items-info">
+                        <p style="color: white;">Auf Abwegen</p>
+                        <div class="d-flex" style="color: grey; justify-content: space-between;">
+                            <div class="d-flex" style="min-width: 80%;">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <p style="min-width: 20%; text-align: right; color: white; padding-right: 3%;">Free to Play
+                            </p>
+                        </div>
+                        <p style="color: grey;">Free to Play, Adventure, Indie, 2D</p>
+                    </div>
+                </div>
+                <div class="items d-flex">
+                    <div class="items-img-container">
+                        <img src="img/items_8.jpg" alt="">
+                    </div>
+                    <div class="items-info">
+                        <p style="color: white;">ManaRocks</p>
+                        <div class="d-flex" style="color: grey; justify-content: space-between;">
+                            <div class="d-flex" style="min-width: 80%;">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <p style="min-width: 20%; text-align: right; color: white; padding-right: 3%;">Free to Play
+                            </p>
+                        </div>
+                        <p style="color: grey;">Early Access, Free to Play, Card Game, Indie</p>
+                    </div>
+                </div>
+                <div class="items d-flex">
+                    <div class="items-img-container">
+                        <img src="img/items_9.jpg" alt="">
+                    </div>
+                    <div class="items-info">
+                        <p style="color: white;">文 字 獄</p>
+                        <div class="d-flex" style="color: grey; justify-content: space-between;">
+                            <div class="d-flex" style="min-width: 80%;">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <p style="min-width: 20%; text-align: right; color: white; padding-right: 3%;">Free</p>
+                        </div>
+                        <p style="color: grey;">Free to Play, Adventure, Indie</p>
+                    </div>
+                </div>
+                <div class="items d-flex">
+                    <div class="items-img-container">
+                        <img src="img/items_10.jpg" alt="">
+                    </div>
+                    <div class="items-info">
+                        <p style="color: white;">When the Darkness comes</p>
+                        <div class="d-flex" style="color: grey; justify-content: space-between;">
+                            <div class="d-flex" style="min-width: 80%;">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <p style="min-width: 20%; text-align: right; color: white; padding-right: 3%;">Free</p>
+                        </div>
+                        <p style="color: grey;">Free to Play, Psychological Horror, Indie, Adventure</p>
+                    </div>
+                </div>
+                <div class="items d-flex paging">
+                    <div>Showing 1-10 of 753 results</div>
+                    <div class="numbers-div">
+                        <button>&#60;</button>
+                        <span style="color: white;">1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                        <span>6</span>
+                        <span>...</span>
+                        <span>76</span>
+                        <button>&#62;</button>
+                    </div>
+                </div>
+            </div>
+            <div class="contents" style="display: none;">
+                <div class="items d-flex">
+                    <div class="items-img-container">
+                        <img src="img/items_1.jpg" alt="">
+                    </div>
+                    <div class="items-info">
+                        <p style="color: white;">Dodge 4</p>
+                        <div class="d-flex" style="color: grey; justify-content: space-between;">
+                            <div class="d-flex" style="min-width: 80%;">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <p style="min-width: 20%; text-align: right; color: white; padding-right: 3%;">Free to Play
+                            </p>
+                        </div>
+                        <p style="color: grey;">Early Access, Free to Play, Indie, Casual</p>
+                    </div>
+                </div>
+                <div class="items d-flex">
+                    <div class="items-img-container">
+                        <img src="img/items_2.jpg" alt="">
+                    </div>
+                    <div class="items-info">
+                        <p style="color: white;">Neon Beats</p>
+                        <div class="d-flex" style="color: grey; justify-content: space-between;">
+                            <div class="d-flex" style="min-width: 80%;">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <p style="min-width: 20%; text-align: right; color: white; padding-right: 3%;">Free to Play
+                            </p>
+                        </div>
+                        <p style="color: grey;">Free to Play, Indie, Rhythm, Great Soundtrack</p>
+                    </div>
+                </div>
+                <div class="items d-flex">
+                    <div class="items-img-container">
+                        <img src="img/items_3.jpg" alt="">
+                    </div>
+                    <div class="items-info">
+                        <p style="color: white;">KurtzPel</p>
+                        <div class="d-flex" style="color: grey; justify-content: space-between;">
+                            <div class="d-flex" style="min-width: 80%;">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <p style="min-width: 20%; text-align: right; color: white; padding-right: 3%;">Free to Play
+                            </p>
+                        </div>
+                        <p style="color: grey;">Early Access, Anime, Character Customization, Action</p>
+                    </div>
+                </div>
+                <div class="items d-flex">
+                    <div class="items-img-container">
+                        <img src="img/items_4.jpg" alt="">
+                    </div>
+                    <div class="items-info">
+                        <p style="color: white;">Toran</p>
+                        <div class="d-flex" style="color: grey; justify-content: space-between;">
+                            <div class="d-flex" style="min-width: 80%;">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <p style="min-width: 20%; text-align: right; color: white; padding-right: 3%;">Free</p>
+                        </div>
+                        <p style="color: grey;">Indie, Adventure, Free to Play, VR</p>
+                    </div>
+                </div>
+                <div class="items d-flex">
+                    <div class="items-img-container">
+                        <img src="img/items_5.jpg" alt="">
+                    </div>
+                    <div class="items-info">
+                        <p style="color: white;">Sin Slayers: The First Sin</p>
+                        <div class="d-flex" style="color: grey; justify-content: space-between;">
+                            <div class="d-flex" style="min-width: 80%;">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <p style="min-width: 20%; text-align: right; color: white; padding-right: 3%;">Free</p>
+                        </div>
+                        <p style="color: grey;">Indie, RPG, Strategy, Adventure</p>
+                    </div>
+                </div>
+                <div class="items d-flex">
+                    <div class="items-img-container">
+                        <img src="img/items_6.jpg" alt="">
+                    </div>
+                    <div class="items-info">
+                        <p style="color: white;">Black Survival</p>
+                        <div class="d-flex" style="color: grey; justify-content: space-between;">
+                            <div class="d-flex" style="min-width: 80%;">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <p style="min-width: 20%; text-align: right; color: white; padding-right: 3%;">Free to Play
+                            </p>
+                        </div>
+                        <p style="color: grey;">Free to Play, Survival, Anime, Strategy</p>
+                    </div>
+                </div>
+                <div class="items d-flex">
+                    <div class="items-img-container">
+                        <img src="img/items_7.jpg" alt="">
+                    </div>
+                    <div class="items-info">
+                        <p style="color: white;">Auf Abwegen</p>
+                        <div class="d-flex" style="color: grey; justify-content: space-between;">
+                            <div class="d-flex" style="min-width: 80%;">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <p style="min-width: 20%; text-align: right; color: white; padding-right: 3%;">Free to Play
+                            </p>
+                        </div>
+                        <p style="color: grey;">Free to Play, Adventure, Indie, 2D</p>
+                    </div>
+                </div>
+                <div class="items d-flex">
+                    <div class="items-img-container">
+                        <img src="img/items_8.jpg" alt="">
+                    </div>
+                    <div class="items-info">
+                        <p style="color: white;">ManaRocks</p>
+                        <div class="d-flex" style="color: grey; justify-content: space-between;">
+                            <div class="d-flex" style="min-width: 80%;">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <p style="min-width: 20%; text-align: right; color: white; padding-right: 3%;">Free to Play
+                            </p>
+                        </div>
+                        <p style="color: grey;">Early Access, Free to Play, Card Game, Indie</p>
+                    </div>
+                </div>
+                <div class="items d-flex">
+                    <div class="items-img-container">
+                        <img src="img/items_9.jpg" alt="">
+                    </div>
+                    <div class="items-info">
+                        <p style="color: white;">文 字 獄</p>
+                        <div class="d-flex" style="color: grey; justify-content: space-between;">
+                            <div class="d-flex" style="min-width: 80%;">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <p style="min-width: 20%; text-align: right; color: white; padding-right: 3%;">Free</p>
+                        </div>
+                        <p style="color: grey;">Free to Play, Adventure, Indie</p>
+                    </div>
+                </div>
+                <div class="items d-flex">
+                    <div class="items-img-container">
+                        <img src="img/items_10.jpg" alt="">
+                    </div>
+                    <div class="items-info">
+                        <p style="color: white;">When the Darkness comes</p>
+                        <div class="d-flex" style="color: grey; justify-content: space-between;">
+                            <div class="d-flex" style="min-width: 80%;">
+                                <i class="fab fa-windows"></i>
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <p style="min-width: 20%; text-align: right; color: white; padding-right: 3%;">Free</p>
+                        </div>
+                        <p style="color: grey;">Free to Play, Psychological Horror, Indie, Adventure</p>
+                    </div>
+                </div>
+                <div class="items d-flex paging">
+                    <div>Showing 1-10 of 128 results</div>
+                    <div class="numbers-div">
+                        <button>&#60;</button>
+                        <span style="color: white;">1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                        <span>6</span>
+                        <span>...</span>
+                        <span>13</span>
+                        <button>&#62;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main-right">
+            <div class="main-right-items">
+                <p>
+                    NARROW BY TAG
+                </p>
+                <div>
+                    <div class="tags">Action</div>
+                    <div class="tags">Adventure</div>
+                    <div class="tags">Casual</div>
+                    <div class="tags">Indie</div>
+                    <div class="tags">Massively Multiplayer</div>
+                    <div class="tags">Racing</div>
+                    <div class="tags">RPG</div>
+                    <div class="tags">Simulation</div>
+                    <div class="tags">Sports</div>
+                    <div class="tags">Strategy</div>
+                </div>
+            </div>
+
+            <div class="main-right-items">
+                <p>
+                    RECOMMENDED SPECIALS
+                </p>
+                <div id="specials-container">
+                    <div class="specials">
+                        <img src="img/specials_1.jpg" alt="">
+                        <div class="center price">
+                            <span class="discount-rate">-50%</span>
+                            <span class="old-price">15.000đ</span>
+                            <span class="new-price">7.500đ</span>
+                        </div>
+                    </div>
+                    <div class="specials">
+                        <img src="img/specials_2.jpg" alt="">
+                        <div class="center price">
+                            <span class="discount-rate">-80%</span>
+                            <span class="old-price">990.000đ</span>
+                            <span class="new-price">198.000đ</span>
+                        </div>
+                    </div>
+                    <div class="specials">
+                        <img src="img/specials_3.jpg" alt="">
+                        <div class="center price">
+                            <span class="discount-rate">-20%</span>
+                            <span class="old-price">350.000đ</span>
+                            <span class="new-price">280.000đ</span>
+                        </div>
+                    </div>
+                    <div class="specials">
+                        <img src="img/specials_4.jpg" alt="">
+                        <div class="center price">
+                            <span class="discount-rate">-40%</span>
+                            <span class="old-price">350.000đ</span>
+                            <span class="new-price">210.000đ</span>
+                        </div>
+                    </div>
+                    <div class="specials">
+                        <img src="img/specials_5.jpg" alt="">
+                        <div class="center price">
+                            <span class="discount-rate">-60%</span>
+                            <span class="old-price">120.000đ</span>
+                            <span class="new-price">48.000đ</span>
+                        </div>
+                    </div>
+                    <div class="specials">
+                        <img src="img/specials_6.jpg" alt="">
+                        <div class="center price">
+                            <span class="discount-rate">-75%</span>
+                            <span class="old-price">250.000đ</span>
+                            <span class="new-price">62.500đ</span>
+                        </div>
+                    </div>
+                    <div class="specials">
+                        <img src="img/specials_7.jpg" alt="">
+                        <div class="center price">
+                            <span class="discount-rate">-50%</span>
+                            <span class="old-price">250.000đ</span>
+                            <span class="new-price">125.000đ</span>
+                        </div>
+                    </div>
+                    <div class="specials">
+                        <img src="img/specials_8.jpg" alt="">
+                        <div class="center price">
+                            <span class="discount-rate">-20%</span>
+                            <span class="old-price">70.000đ</span>
+                            <span class="new-price">56.000đ</span>
+                        </div>
+                    </div>
+                    <div class="specials">
+                        <img src="img/specials_9.jpg" alt="">
+                        <div class="center price">
+                            <span class="discount-rate">-34%</span>
+                            <span class="old-price">165.000đ</span>
+                            <span class="new-price">109.000đ</span>
+                        </div>
+                    </div>
+                    <div class="specials">
+                        <img src="img/specials_10.jpg" alt="">
+                        <div class="center price">
+                            <span class="discount-rate">-15%</span>
+                            <span class="old-price">220.000đ</span>
+                            <span class="new-price">187.000đ</span>
+                        </div>
+                    </div>
+                    <button>See All Specials</button>
+                </div>
+
+            </div>
+            <div class="main-right-items"></div>
+        </div>
+    </main>
+
+    <footer class="center">
+        <div class="d-flex">
+            <img src="img/logo.png" alt="">
+            <p>© 2019 Foster Corporation. All rights reserved.</p>
+            <p><span>Contact</span><span>Recruit</span><span>Advertise</span><span class="last-span">Gifts</span></p>
+        </div>
+        <a href="#top">
+            <div id="go-to-top-div" class="center">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+        </a>
+    </footer>
+</body>
+
+<script src="js/javascript.js"></script>
+
+</html>

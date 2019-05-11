@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/huan_style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <title>Welcome to Foster</title>
+</head>
+
+<body>
+    <header class="d-flex">
+        <!-- div dưới dùng để đẩy header-right-div qua phải-->
+        <div class="d-flex" id="header-left-div">
+            <div class="center" id="header-logo" onclick="RedirectTo('index')">
+                <p>Foster</p>
+            </div>
+            <div class="center" id="header-navbar">
+                <ul>
+                    <li class="menu" onclick="ShowSubMenu()">
+                        <a href="" class="sub-menu-container">
+                            STORE
+                            <div class="sub-menu">
+                                <div>FEATURED</div>
+                                <div>EXPLORE</div>
+                                <div>CURATORS</div>
+                                <div>WISHLIST</div>
+                                <div>NEWS</div>
+                                <div>STATS</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li><a href="" class="no-sub-menu">COMMUNITY</a></li>
+                    <li><a href="" class="no-sub-menu">ABOUT</a></li>
+                    <li class="last-li"><a href="" class="no-sub-menu">SUPPORT</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="center" id="header-right-div">
+            <ul>
+                <li><a href="">Login</a></li>
+                <li class="last-li"><a href="">Register</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="d-flex">
+        <div id="aside-left">
+            <div class="d-flex" id="browse-container">
+                <p class="browse-titles">BROWSE CATEGORIES</p>
+                <p class="browse-lines">Top Sellers</p>
+                <p class="browse-lines">Recently Updated</p>
+                <p class="browse-lines">New Releases</p>
+                <p class="browse-lines">Upcoming</p>
+                <p class="browse-lines">Specials</p>
+                <p class="browse-lines">Virtual Reality</p>
+                <p class="browse-titles">BROWSE BY GENRES</p>
+                <p class="browse-lines" onclick="RedirectTo('freetoplay')">Free to Play</p>
+                <p class="browse-lines">Early Access</p>
+                <p class="browse-lines">Action</p>
+                <p class="browse-lines">Adventure</p>
+                <p class="browse-lines">Casual</p>
+                <p class="browse-lines">Indie</p>
+                <p class="browse-lines">Massively Multiplayer</p>
+                <p class="browse-lines">Racing</p>
+                <p class="browse-lines">RPG</p>
+                <p class="browse-lines">Simulations</p>
+                <p class="browse-lines">Sports</p>
+                <p class="browse-lines">Strategy</p>
+                <div></div>
+            </div>
+        </div>
+        <div id="main-div">
+            <div class="center" id="search-container">
+                <input type="text" placeholder="Search the store...">
+                <button onmousedown="Smaller()" onmouseup="Bigger()"></button>
+            </div>
+
+            <div class="d-flex slideshow-container">
+                <div class="d-flex title-container">
+                    <p>RECOMMENDED</p>
+                    <button>BROWSE MORE</button>
+                </div>
+                <button class="prev" onclick="MoveImages('backward')"><i class="fas fa-chevron-left"></i></button>
+                <div class="slideshow">
+
+                    <div id="slideshow-images-container" class="d-flex">
+                        <img src="img/skyrim_banner.jpg" alt="">
+                        <img src="img/darksoulsIII_banner.jpg" alt="">
+                        <img src="img/diablo_banner.jpg" alt="">
+                        <img src="img/dst_banner.jpg" alt="" onclick="RedirectTo('product')">
+                        <img src="img/titanquest_banner.jpg" alt="">
+                        <img src="img/FFXV_banner.png" alt="">
+                        <img src="img/kingdomsofamalurreckoning_banner.jpg" alt="">
+                        <img src="img/serioussam3bfe_banner.jpg" alt="">
+                    </div>
+
+                </div>
+                <button class="next" onclick="MoveImages('forward')"><i class=" fas fa-chevron-right"></i></button>
+                <div class="center slide-indicator">
+                    <div onclick="MoveToXImage(0)" class="active-indicator">a</div>
+                    <div onclick="MoveToXImage(1)">a</div>
+                    <div onclick="MoveToXImage(2)">a</div>
+                    <div onclick="MoveToXImage(3)">a</div>
+                    <div onclick="MoveToXImage(4)">a</div>
+                    <div onclick="MoveToXImage(5)">a</div>
+                    <div onclick="MoveToXImage(6)">a</div>
+                    <div onclick="MoveToXImage(7)">a</div>
+                </div>
+            </div>
+
+            <div id="grid-container" class="d-flex">
+                <div id="grid-title-container" class="d-flex title-container">
+                    <p>NEW GAMES</p>
+                    <button>VIEW ALL</button>
+                </div>
+                <div id="grid-div">
+                    <div class="center" onmouseover="RandomAnimation(0)" onmouseout="UndoAnimation(0)">
+                        <img src="img/mordhau_banner.jpg" alt="">
+                    </div>
+                    <div class="center">
+                        <img src="img/bitdungeonIII_banner.jpg" alt="" onmouseover="RandomAnimation(1)"
+                            onmouseout="UndoAnimation(1)">
+                    </div>
+                    <div class="center">
+                        <img src="img/neonbeats_banner.jpg" alt="" onmouseover="RandomAnimation(2)"
+                            onmouseout="UndoAnimation(2)">
+                    </div>
+                    <div class="center">
+                        <img src="img/riseofindustry_banner.jpg" alt="" onmouseover="RandomAnimation(3)"
+                            onmouseout="UndoAnimation(3)">
+                    </div>
+                    <div class="center">
+                        <img src="img/fellsealarbitersmark_banner.jpg" alt="" onmouseover="RandomAnimation(4)"
+                            onmouseout="UndoAnimation(4)">
+                    </div>
+                    <div class="center">
+                        <img src="img/talesoftheneonsea_banner.jpg" alt="" onmouseover="RandomAnimation(5)"
+                            onmouseout="UndoAnimation(5)">
+                    </div>
+                    <div class="center">
+                        <img src="img/himno_banner.jpg" alt="" onmouseover="RandomAnimation(6)"
+                            onmouseout="UndoAnimation(6)">
+                    </div>
+                    <div class="center">
+                        <img src="img/lorelai_banner.jpg" alt="" onmouseover="RandomAnimation(7)"
+                            onmouseout="UndoAnimation(7)">
+                    </div>
+                    <div class="center">
+                        <img src="img/darkdevotion_banner.jpg" alt="" onmouseover="RandomAnimation(8)"
+                            onmouseout="UndoAnimation(8)">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="center">
+        <div class="d-flex">
+            <img src="img/logo.png" alt="">
+            <p>© 2019 Foster Corporation. All rights reserved.</p>
+            <p><span>Contact</span><span>Recruit</span><span>Advertise</span><span class="last-span">Gifts</span></p>
+        </div>
+        <a href="#top">
+            <div id="go-to-top-div" class="center">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+        </a>
+    </footer>
+</body>
+
+<script src="js/javascript.js"></script>
+
+</html>
