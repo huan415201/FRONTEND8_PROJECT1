@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/logo.png">
     <link rel="stylesheet" type="text/css" media="screen" href="css/huan_style.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -22,7 +23,7 @@
             </div>
             <div class="center" id="header-navbar">
                 <ul>
-                    <li class="menu" onclick="ShowSubMenu()">
+                    <li class="menu">
                         <a href="" class="sub-menu-container">
                             STORE
                             <div class="sub-menu">
@@ -35,16 +36,16 @@
                             </div>
                         </a>
                     </li>
-                    <li><a href="" class="no-sub-menu">COMMUNITY</a></li>
-                    <li><a href="" class="no-sub-menu">ABOUT</a></li>
-                    <li class="last-li"><a href="" class="no-sub-menu">SUPPORT</a></li>
+                    <li class="no-sub-menu"><a href="">COMMUNITY</a></li>
+                    <li class="no-sub-menu"><a href="">ABOUT</a></li>
+                    <li class="last-li no-sub-menu"><a href="">SUPPORT</a></li>
                 </ul>
             </div>
         </div>
         <div class="center" id="header-right-div">
             <ul>
-                <li><a href="">Login</a></li>
-                <li class="last-li"><a href="">Register</a></li>
+                <li class="no-sub-menu"><a href="">Login</a></li>
+                <li class="last-li no-sub-menu"><a href="">Register</a></li>
             </ul>
         </div>
     </header>
@@ -55,7 +56,7 @@
                 <span>Don't Starve Together</span></p>
             <p style="color: white; font-size: 2.1em;">Don't Starve Together</p>
         </div>
-        <div id="product-details-container" class="d-flex">
+        <section id="product-details-container" class="d-flex">
             <div id="images-container">
                 <div id="product-big-img">
                     <img src="img/product_1.jpg" alt="">
@@ -138,9 +139,62 @@
                         <div>+</div>
                     </div>
                 </div>
-
             </div>
-        </div>
+        </section>
+
+        <section id="below-container">
+            <div id="buying">
+                <p style="font-size: 2em;">Buy Don't Starve Together</p>
+                <p>Includes an extra copy of Don't Starve Together. Send it to a friend!</p>
+                <div class="buying-button-container">
+                    <span>165.000đ</span>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="small-sections">
+                <p class="border-bottom">ABOUT THIS GAME</p>
+                <p class="texts">Don't Starve Together is the standalone multiplayer expansion of the uncompromising
+                    wilderness
+                    survival game, Don't Starve. </p>
+                <p class="texts">Enter a strange and unexplored world full of strange creatures, dangers, and surprises.
+                    Gather
+                    resources to craft items and structures that match your survival style. Play your way as you unravel
+                    the mysteries of this strange land. </p>
+                <p class="texts">Cooperate with your friends in a private game, or take your chances with strangers
+                    online. Work with
+                    other players to survive the harsh environment, or strike out on your own.</p>
+                <p class="texts">Do whatever it takes, but most importantly, Don't Starve.</p>
+            </div>
+
+            <div class="small-sections">
+                <p class="border-bottom">SYSTEM REQUIREMENTS</p>
+                <div class="d-flex">
+                    <div id="minimum">
+                        <p style="color: #66c0f4;">MINIMUM:</p>
+                        <p><span>OS:</span> Windows Vista/Windows 7/Windows 8</p>
+                        <p><span>Processor:</span> 1.7+ GHz or better</p>
+                        <p><span>Memory:</span> 1 GB RAM</p>
+                        <p><span>Graphics:</span> Radeon HD5450 or better; 256 MB or higher</p>
+                        <p><span>DirectX:</span> Version 9.0c</p>
+                        <p><span>Network:</span> Broadband Internet connection</p>
+                        <p><span>Storage:</span> 750 MB available space</p>
+                        <p><span>Sound Card:</span> 100% DirectX9.0c compatible sound card and drivers</p>
+                    </div>
+                    <div id="recommended">
+                        <p style="color: #66c0f4;">RECOMMENDED:</p>
+                        <p><span>OS:</span> Windows 7, 8, 10 (64bit)</p>
+                        <p><span>Processor:</span> Intel Core i5-2500K or AMD Ryzen 5 1400</p>
+                        <p><span>Memory:</span> 8 GB RAM</p>
+                        <p><span>Graphics:</span> NVIDIA GeForce GTX 970 or AMD Radeon RX 570</p>
+                        <p><span>DirectX:</span> Version 11</p>
+                        <p><span>Network:</span> Broadband Internet connection</p>
+                        <p><span>Storage:</span> 20 GB available space</p>
+                        <p><span>Sound Card:</span> 100% DirectX9.0c compatible sound card and drivers</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="center">
@@ -157,6 +211,6 @@
     </footer>
 </body>
 
-<script src="js/javascript.js"></script>
+<script src="js/product_script.js"></script>
 
 </html>

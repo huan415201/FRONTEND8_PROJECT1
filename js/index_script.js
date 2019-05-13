@@ -126,26 +126,3 @@ function UndoAnimation(index) {
 function RedirectTo(location) {
     window.location.href = "http://127.0.0.1:5500/" + location + ".html";
 }
-
-function ChangeActiveTab(index) {
-    var tabs = document.getElementsByClassName("tabs");
-    var contents = document.getElementsByClassName("contents");
-    console.log(contents.length);
-    for (var i = 0; i < tabs.length; i++) {
-        tabs[i].classList.remove("active-tab");
-        contents[i].style.display = "none";
-    }
-    tabs[index].classList.add("active-tab");
-    contents[index].style.display = "block";
-}
-
-function ChangeImage(index) {
-    var divList = document.querySelectorAll("#slideshow-picker .img-container");
-    var bigImage = document.querySelector("#product-big-img img");
-    var smallImages = document.querySelectorAll("#slideshow-picker .img-container img");
-    for (var i = 0; i < divList.length; i++) {
-        divList[i].classList.remove("active-img");
-    }
-    divList[index - 1].classList.add("active-img");
-    bigImage.src = smallImages[index - 1].src;
-}
