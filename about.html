@@ -1,15 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/huan_style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <title>Welcome to Foster</title>
 </head>
 
-<body>
+<body onscroll="Appear()">
+    <header class="d-flex">
+        <!-- div dưới dùng để đẩy header-right-div qua phải-->
+        <div class="d-flex" id="header-left-div">
+            <div class="center" id="header-logo" onclick="RedirectTo('index')">
+                <p>Foster</p>
+            </div>
+            <div class="center" id="header-navbar">
+                <ul>
+                    <li class="menu">
+                        <a href="" class="sub-menu-container">
+                            STORE
+                            <div class="sub-menu">
+                                <div>FEATURED</div>
+                                <div>EXPLORE</div>
+                                <div>CURATORS</div>
+                                <div>WISHLIST</div>
+                                <div>NEWS</div>
+                                <div>STATS</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="no-sub-menu"><a href="">COMMUNITY</a></li>
+                    <li class="no-sub-menu"><a href="about.html">ABOUT</a></li>
+                    <li class="last-li no-sub-menu"><a href="">SUPPORT</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="center" id="header-right-div">
+            <ul>
+                <li class="no-sub-menu"><a href="">Login</a></li>
+                <li class="last-li no-sub-menu"><a href="">Register</a></li>
+            </ul>
+        </div>
+    </header>
 
+    <main id="about-main" class="center">
+        <div class="center">
+            <img class="logo" src="img/logo.png" alt="logo"><span id="logo-name">Foster</span>
+        </div>
+        <div id="describe">
+            <p>Foster is the ultimate destination for playing, discussing, and creating games.</p>
+        </div>
+        <div id="install" class="center">
+            <button>INSTALL FOSTER<i class="fab fa-windows"></i></button>
+        </div>
+        <button id="learn-more" onclick="Scroll()">LEARN MORE <i class="fas fa-chevron-down"></i></button>
+        <div class="center" id="appear-container">
+            <p class="appear-first-p">Access Games Instantly</p>
+            <p class="appear-second-p">With nearly 30,000 games from AAA to indie and everything in-between. Enjoy
+                exclusive deals, automatic
+                game updates, and other great perks.</p>
+            <a href="index.html">Browse the Store <i class="fas fa-arrow-right"></i></a>
+            <div class="appear" id="appear-1">
+                <img src="img/appear_1.jpg" alt="sekiro">
+            </div>
+            <div class="appear" id="appear-2">
+                <img src="img/appear_2.jpg" alt="three-kingdoms">
+            </div>
+            <div class="appear" id="appear-3">
+                <img src="img/appear_3.jpg" alt="risk-of-rain-2">
+            </div>
+            <div class="appear" id="appear-4">
+                <img src="img/appear_4.jpg" alt="pubg">
+            </div>
+            <div class="appear" id="appear-5">
+                <img src="img/appear_5.jpg" alt="a-plague-tale-innocence">
+            </div>
+            <div class="appear" id="appear-6">
+                <img src="img/appear_6.jpg" alt="monster-hunter-world">
+            </div>
+            <div class="appear" id="appear-7">
+                <img src="img/appear_7.jpg" alt="mordhau">
+            </div>
+            <div class="appear" id="appear-8">
+                <img src="img/appear_8.jpg" alt="pubg-survivor-pass-wild-card">
+            </div>
+            <div class="appear" id="appear-9">
+                <img src="img/appear_9.jpg" alt="grand-theft-auto-v">
+            </div>
+            <div class="appear" id="appear-10">
+                <img src="img/appear_10.jpg" alt="rage-2">
+            </div>
+            <div class="appear" id="appear-11">
+                <img src="img/appear_11.jpg" alt="civilization-vi">
+            </div>
+        </div>
+
+        <div class="center" id="community">
+            <div>
+                <p class="appear-first-p">Join the Community</p>
+                <p class="appear-second-p">Meet new people, join groups, form clans, chat in-game and more! With over
+                    100
+                    million potential friends (or enemies), the fun never stops.</p>
+                <a href="index.html">Visit the Community <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div id="community-image">
+                <img src="img/community.png" alt="community">
+            </div>
+        </div>
+
+        <div class="center" id="hardware">
+            <div id="hardware-image">
+                <img src="img/hardware.png" alt="hardware">
+            </div>
+            <div>
+                <p class="appear-first-p">Experience Steam Hardware</p>
+                <p class="appear-second-p">We created the Steam Controller and the VR technologies that power the HTC
+                    Vive to making gaming on the PC even better.</p>
+                <a href="index.html">Experience Steam Hardware <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="center">
+        <div class="d-flex">
+            <img src="img/logo.png" alt="">
+            <p>© 2019 Foster Corporation. All rights reserved.</p>
+            <p><span>Contact</span><span>Recruit</span><span>Advertise</span><span class="last-span">Gifts</span></p>
+        </div>
+        <a href="#top">
+            <div id="go-to-top-div" class="center">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+        </a>
+    </footer>
 </body>
+
+<script src="js/about_script.js"></script>
 
 </html>

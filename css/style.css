@@ -57,6 +57,7 @@ header ul li {
 }
 
 header ul li a {
+    color: #082040;
     border-bottom: 0;
     transition: all 0.3s;
 }
@@ -802,27 +803,232 @@ cursor: pointer;
     margin-right: 2%;
 }
 
- #minimum, #recommended {
-     min-width: 49%;
- }
+#minimum, #recommended {
+    min-width: 49%;
+    font-size: 0.8em;
+}
 
- #minimum p, #recommended p {
-     color: rgb(235, 235, 235);
- }
+#minimum p, #recommended p {
+    color: rgb(235, 235, 235);
+}
 
- #minimum span, #recommended span {
-     color: rgb(137, 137, 137);
- }
+#minimum span, #recommended span {
+    color: rgb(137, 137, 137);
+}
 
- @keyframes FadeOut {
-     0% {
-         display: none;
-         opacity: 0;
-     }
-     1% {
-         display: block;
-     }
-     100% {
-         opacity: 1;
-     }
- }
+#about-main {
+    background-color: lightslategrey;
+    font-family: sans-serif;
+    flex-direction: column;
+}
+
+#about-main>* {
+    margin-bottom: 1.5%;
+}
+
+#about-main img.logo {
+    width: 20%;
+}
+
+#logo-name {
+    font-weight: bold;
+    font-size: 3.5em; 
+}
+
+#describe p {
+    font-weight: bold;
+    padding-left: 20%;
+    padding-right: 15%;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#install {
+    min-width: 100%;
+}
+
+#install button {
+    border: 0;
+    background-image: linear-gradient(to right, #06bfff 50%, #2b74ff 100%);
+    padding: 10px;
+    color: white;
+    border-radius: 2px;
+    font-size: 1.2em;
+    min-width: 22%;
+    transition: background-image 1s;
+    margin-bottom: 15%;
+    opacity: 1;
+}
+
+#install button:hover {
+    cursor: pointer;
+    animation-name: BackgroundImage;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    /* background-image: linear-gradient(to right, #06bfff 50%, #06bfff 100%); */
+}
+
+#install button i {
+    margin-left: 20%;
+}
+
+#learn-more {
+    border: 0;
+    background-color: transparent;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 30vh; 
+    outline: 0;
+}
+
+#learn-more:hover {
+    cursor: pointer;
+}
+
+#appear-container {
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 30%;
+}
+
+.appear-first-p {
+    font-weight: bold;
+    font-size: 2.5em;
+    margin-bottom: 1.5%;
+}
+
+.appear-second-p {
+    margin-bottom: 2.5%;
+}
+
+.appear-second-p + a {
+    color: #66c0f4;
+    margin-bottom: 50vh;
+}
+
+#appear-container a:hover i , #community a:hover i, #hardware a:hover i {
+    transition: all 0.3s;
+}
+
+#appear-container a:hover i , #community a:hover i, #hardware a:hover i {
+    margin-left: 15px;
+}
+
+.appear {
+    position: absolute;
+    opacity: 0;
+    transition: all 1.5s;
+}
+
+.appear:hover {
+    cursor: pointer;
+}
+
+.depth-1 {
+    width: 200px;
+    opacity: 1;
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.75);
+}
+
+.depth-2 {
+    width: 170px;
+    opacity: 0.9;
+}
+
+.depth-3 {
+    width: 130px;
+    opacity: 0.8;
+}
+
+#appear-1 {
+    left: 0;
+    top: 0;
+}
+
+#appear-2 {
+    left: 20%;
+    top: -10%;
+}
+
+#appear-3 {
+    right: 0;
+    top: 0;
+}
+
+#appear-4 {
+    right: 20%;
+    top: -10%;
+}
+
+#appear-5 {
+    left: -2.5%;
+    top: 20%;
+}
+
+#appear-6 {
+    left: 10%;
+    top: 34%;
+}
+
+#appear-7 {
+    right: -2.5%;
+    top: 20%;
+}
+
+#appear-8 {
+    right: 10%;
+    top: 34%;
+}
+
+#appear-9 {
+    left: 5%;
+    top: 64%;
+}
+
+#appear-10 {
+    right: 5%;
+    top: 64%;
+}
+
+#appear-11 {
+    left: 40%;
+    top: 66%;
+}
+
+#community, #hardware {
+    text-align: center;
+}
+
+#community-image, #hardware-image {
+    margin-top: 2%;
+    opacity: 0;
+    transition: all 1.5s;
+}
+
+#community > *, #hardware > * {
+    max-width: 35%;
+    margin-right: 2%;
+}
+
+@keyframes BackgroundImage {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes FadeOut {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+    1% {
+        display: block;
+    }
+    100% {
+        opacity: 1;
+    }
+}
