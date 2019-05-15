@@ -746,7 +746,7 @@ cursor: pointer;
     right: 3%;
     bottom: 0%;
     transform: translate(0, 50%);
-    min-width: 25%;
+    min-width: 28%;
     display: flex;
     justify-content: space-between;
     padding: 3px;
