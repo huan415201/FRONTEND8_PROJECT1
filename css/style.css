@@ -25,7 +25,7 @@ header {
 }
 
 #header-logo {
-    padding: 3vh 3.4vw;
+    padding: 3vh 6%;
     margin-right: 5vw;
     background-image: url(../img/logo.png);
     background-size: contain;
@@ -1030,5 +1030,23 @@ cursor: pointer;
     }
     100% {
         opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    #header-logo {
+        padding: 3vh 2%;
+    }
+
+    .title-container {
+        padding: 0 10% 0 10%;
+    }
+
+    .slideshow {
+        max-width: 80%;
+    }
+
+    #go-to-top-div {
+        font-size: 1.3em;
     }
 }
