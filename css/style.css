@@ -1033,6 +1033,12 @@ cursor: pointer;
     }
 }
 
+@media screen and (max-width: 1600px) {
+    #header-logo {
+        padding: 3vh 4%;
+    }
+}
+
 @media screen and (max-width: 1366px) {
     #header-logo {
         padding: 3vh 2%;
@@ -1048,5 +1054,33 @@ cursor: pointer;
 
     #go-to-top-div {
         font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #header-left-div {
+        width: 100%;
+    }
+
+    #header-logo {
+        width: 100%;
+        background-position: 40% 0;
+        padding-right: 15%;
+    }
+    
+    #header-navbar {
+        display: none;
+    }
+
+    #header-right-div {
+        display: none;
+    }
+
+    #aside-left {
+        display: none;
+    }
+
+    main {
+        width: 100%;
     }
 }
