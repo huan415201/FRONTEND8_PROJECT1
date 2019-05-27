@@ -1109,3 +1109,28 @@ canvas {
         width: 100%;
     }
 }
+
+@media screen and (max-width: 375px) {
+    #header-logo {
+        color: transparent;
+        margin: 0;
+        background-position: center center;
+    }
+
+    .title-container {
+        padding: 0;
+    }
+
+    .slideshow-container>button {
+        display: none;
+    }
+
+    .slideshow {
+        max-width: 100%;
+        margin-bottom: 3%;
+    }
+
+    .slide-indicator div {
+        margin-right: 3%;
+    }
+}
