@@ -1011,6 +1011,18 @@ cursor: pointer;
     margin-right: 2%;
 }
 
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: 11;
+}
+
+.disappear {
+    display: none;
+}
+
 @keyframes BackgroundImage {
     from {
         opacity: 0.5;
@@ -1020,7 +1032,7 @@ cursor: pointer;
     }
 }
 
-@keyframes FadeOut {
+@keyframes FadeIn {
     0% {
         display: none;
         opacity: 0;
@@ -1030,6 +1042,19 @@ cursor: pointer;
     }
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes FadeOut {
+    0% {
+        opacity: 1;
+        display: block;
+    }
+    99% {
+        opacity: 0;
+    }
+    100% {
+        display: none;
     }
 }
 

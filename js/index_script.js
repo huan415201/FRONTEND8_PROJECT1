@@ -126,3 +126,44 @@ function UndoAnimation(index) {
 function RedirectTo(location) {
     window.location.href = "http://127.0.0.1:5500/" + location + ".html";
 }
+
+var canvas = document.getElementById("myCanvas");
+canvas.width = document.documentElement.clientWidth;
+canvas.height = document.documentElement.clientHeight;
+var ctx = canvas.getContext("2d");
+var dem = 1;
+function DrawCircle(x, y, r) {
+    if (dem > 99) {
+        clearInterval(Loading);
+        canvas.style.animation = "FadeOut 4s";
+        setTimeout(() => {
+            canvas.classList.add("disappear");
+        }, 3000);
+    }
+    ctx.clearRect(canvas.width / 2 - 100, canvas.height / 2 - 100, canvas.width / 2 + 100, canvas.height / 2 + 100);
+    ctx.beginPath();
+
+    var color = ctx.createLinearGradient(canvas.width / 2 + 100, canvas.height / 2 - 100, canvas.width / 2 - 100, canvas.height / 2 + 100);
+    color.addColorStop("0", "red");
+    color.addColorStop("0.5", "black");
+    color.addColorStop("1.0", "#66c0f4");
+
+    ctx.strokeStyle = color;
+    ctx.lineWidth = 10;
+    console.log(dem / 100);
+    ctx.arc(x, y, r, (-0.5 * Math.PI), (dem / 100) * 2 * Math.PI - (0.5 * Math.PI));
+    ctx.stroke();
+    DrawText();
+    dem++;
+}
+
+function DrawText() {
+    ctx.font = "30px Arial";
+    ctx.fillStyle = "lightgreen";
+    ctx.textAlign = "center";
+    ctx.fillText(dem + "%", canvas.width / 2, canvas.height / 2);
+}
+
+var Loading = setInterval(function () {
+    DrawCircle(canvas.width / 2, canvas.height / 2, 100);
+}, 10);

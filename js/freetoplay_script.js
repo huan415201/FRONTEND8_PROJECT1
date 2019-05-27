@@ -17,5 +17,5 @@ function ChangeActiveTab(index) {
     tabs[index].classList.add("active-tab");
     contents[index].style.opacity = "";
     contents[index].style.display = "";
-    contents[index].style.animationName = "FadeOut";
+    contents[index].style.animationName = "FadeIn";
 }
