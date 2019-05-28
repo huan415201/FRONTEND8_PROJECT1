@@ -1,7 +1,12 @@
 /* #66c0f4 */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #082040;
+    scroll-behavior: smooth;
 }
 
 button:hover {
@@ -456,7 +461,7 @@ footer div img {
 }
 
 .numbers-div {
-    min-width: 26%;
+    min-width: 12vw;
 }
 
 .numbers-div button {
@@ -554,7 +559,7 @@ cursor: pointer;
 }
 
 .price span {
-    padding: 2% 3%;
+    padding: 5px 6px;
 }
 
 .price .discount-rate {
@@ -850,11 +855,11 @@ cursor: pointer;
 #install button {
     border: 0;
     background-image: linear-gradient(to right, #06bfff 50%, #2b74ff 100%);
-    padding: 10px;
+    padding: 10px 30px;
     color: white;
     border-radius: 2px;
-    font-size: 1.2em;
-    min-width: 22%;
+    font-size: 1.3em;
+    min-width: 25%;
     transition: background-image 1s;
     margin-bottom: 15%;
     opacity: 1;
@@ -1061,6 +1066,26 @@ canvas {
 @media screen and (max-width: 1600px) {
     #header-logo {
         padding: 3vh 4%;
+    }
+
+    .numbers-div {
+        min-width: 14vw;
+    }
+
+    #install button {
+        min-width: 29%;
+    }
+
+    .main-right-items>div {
+        min-width: 22vw;
+    }
+
+    #recent-reviews-tooltip {
+        top: -290%;
+    }
+
+    .buying-button-container {
+        min-width: 30%;
     }
 }
 
