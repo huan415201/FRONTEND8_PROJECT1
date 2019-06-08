@@ -167,3 +167,16 @@ function DrawText() {
 var Loading = setInterval(function () {
     DrawCircle(canvas.width / 2, canvas.height / 2, 100);
 }, 10);
+
+function ShowSidebar() {
+    var filter = document.getElementsByClassName("filter")[0];
+    if (!filter.classList.contains("width-100vw")) {
+        filter.style.animation = "WidthIncrease 1s";
+        filter.classList.add("width-100vw");
+
+    }
+    else {
+        filter.classList.remove("width-100vw");
+        filter.style.animation = "";
+    }
+}

@@ -20,6 +20,7 @@
 
 <body>
     <header class="d-flex">
+        <i class="fas fa-bars" onclick="ShowSidebar()"></i>
         <!-- div dưới dùng để đẩy header-right-div qua phải-->
         <div class="d-flex" id="header-left-div">
             <div class="center" id="header-logo" onclick="RedirectTo('index')">
@@ -48,13 +49,50 @@
         </div>
         <div class="center" id="header-right-div">
             <ul>
-                <li class="no-sub-menu"><a href="">Login</a></li>
-                <li class="last-li no-sub-menu"><a href="">Register</a></li>
+                <li class="no-sub-menu"><a href="">Hello SweeTomato!</a></li>
+                <!-- <li class="last-li no-sub-menu"><a href="">Register</a></li> -->
             </ul>
+            <div class="login-info">
+                <img src="img/avatar.jpg" alt="">
+                <div class="below-avatar">
+                    <a href="#">Logout</a>
+                    <a href="#">Account details</a>
+                    <a href="#">Preferences</a>
+                    <a href="#">Change language</a>
+                    <a href="#">View profile</a>
+                </div>
+            </div>
         </div>
     </header>
 
     <main class="d-flex">
+        <div class="filter">
+            <div class="sidebar">
+                <ul class="">
+                    <li><a href="">STORE</a></li>
+                    <li><a href="">COMMUNITY</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="">SUPPORT</a></li>
+                </ul>
+                <ul>
+                    <li><a href=""><b>Genres</b></a></li>
+                    <li><a href="freetoplay.html">Free to Play</a></li>
+                    <li><a href="">Early Access</a></li>
+                    <li><a href="">Action</a></li>
+                    <li><a href="">Adventure</a></li>
+                    <li><a href="">Casual</a></li>
+                    <li><a href="">Indie</a></li>
+                    <li><a href="">Massively Multiplayer</a></li>
+                    <li><a href="">Racing</a></li>
+                    <li><a href="">RPG</a></li>
+                    <li><a href="">Simulations</a></li>
+                    <li><a href="">Sports</a></li>
+                    <li><a href="">Strategy</a></li>
+                </ul>
+            </div>
+        </div>
+
+
         <div id="aside-left">
             <div class="d-flex" id="browse-container">
                 <p class="browse-titles">BROWSE CATEGORIES</p>
