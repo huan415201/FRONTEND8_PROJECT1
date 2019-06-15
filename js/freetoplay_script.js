@@ -1,5 +1,6 @@
 function RedirectTo(location) {
-  window.location.href = "http://127.0.0.1:5500/" + location + ".html";
+  window.location.href =
+    "https://frontend8-project1.herokuapp.com/" + location + ".html";
 }
 
 function ChangeActiveTab(index) {
